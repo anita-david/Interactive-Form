@@ -6,7 +6,10 @@ function FormSection({
   handleYear,
 }) {
   return (
-    <form onSubmit={handleSubmit} className="relative top-75 left-11 flex flex-col lg:top-0 justify-center align-center  lg:left-170 w-70 gap-2  ">
+    <form
+      onSubmit={handleSubmit}
+      className="relative top-75 left-11 flex flex-col lg:top-0 justify-center align-center  lg:left-170 w-70 gap-2  "
+    >
       <label htmlFor="cardholderName" className="uppercase text-purple-950">
         Cardholder Name
       </label>
@@ -45,6 +48,7 @@ function FormSection({
             name="expiryMonth"
             onChange={handleMonth}
             maxLength={2}
+            inputMode="numeric"
             required
           />
         </div>
@@ -58,6 +62,7 @@ function FormSection({
             name="expiryYear"
             onChange={handleYear}
             maxLength={2}
+            inputMode="numeric"
             required
           />
         </div>
@@ -70,14 +75,12 @@ function FormSection({
             placeholder="e.g. 123"
             name="cvc"
             maxLength={3}
+            inputMode="numeric"
             required
           />
         </div>
       </div>
-      <button
-        
-        className="bg-purple-950 text-white mt-5 mb-5 p-2 rounded-md cursor-pointer"
-      >
+      <button className="bg-purple-950 text-white mt-5 mb-5 p-2 rounded-md cursor-pointer">
         Confirm
       </button>
     </form>
