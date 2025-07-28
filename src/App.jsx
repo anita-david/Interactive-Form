@@ -1,6 +1,6 @@
 function App() {
   return (
-    <section className="min-h-screen flex flex-col lg:flex-row">
+    <section className="min-h-screen flex flex-col lg:flex-row ">
       <div
         className="
           absolute top-0 left-0
@@ -47,24 +47,24 @@ function App() {
         </div>
       </div>
 
-      <div className="relative top-75 left-11 flex flex-col lg:top-0 justify-center align-center  lg:left-170 w-80 gap-2  ">
+      <div className="relative top-75 left-11 flex flex-col lg:top-0 justify-center align-center  lg:left-170 w-70 gap-2  ">
         <label htmlFor="" className="uppercase text-purple-950">
           Cardholder Name
         </label>
         <input
           className="border border-gray-400 rounded px-4 py-2 outline-none 
-         focus:border-purple-600 focus:ring-1 focus:ring-purple-600 w-80"
+         focus:border-purple-600 focus:ring-1 focus:ring-purple-600 w-70"
           type="text"
           placeholder="e.g. Jane Appleseed"
         />
         <label htmlFor="" className="uppercase text-purple-950">Card Number</label>
         <input
           className="border border-gray-400 rounded px-4 py-2 outline-none 
-         focus:border-purple-600 focus:ring-1 focus:ring-purple-600 w-80"
+         focus:border-purple-600 focus:ring-1 focus:ring-purple-600 w-70"
           type="text"
           placeholder="e.g. 1234 5678 9123 0000"
         />
-        <div className="flex flex-row gap-5 mt-3">
+        <div className="flex flex-row gap-3 mt-3">
           <div>
             <p className="uppercase text-purple-950">Exp. Date </p>
             <input
@@ -87,7 +87,7 @@ function App() {
             <p className="uppercase text-purple-950">CVC</p>
             <input
               className="border border-gray-400 rounded px-4 py-2 outline-none
-             focus:border-purple-600 focus:ring-1 focus:ring-purple-600 w-30"
+             focus:border-purple-600 focus:ring-1 focus:ring-purple-600 w-25"
               type="text"
               placeholder="e.g. 123"
             />
